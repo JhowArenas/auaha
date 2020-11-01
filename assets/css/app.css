@@ -32,7 +32,7 @@ div.infos-top {
     display: flex;
     width: 100%;
     margin-top: -80px;
-    box-shadow: 0 0 1px 1px #efefef;
+    box-shadow: 0 0 1px 1px #f7f7f7;
     padding: 20px;
     justify-content: center;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ div.infos-top .info {
     justify-content: center;
     align-items: center;
     width: 25%;
-    box-shadow: 1px 0 1px 0px #efefef;
+    box-shadow: 1px 0 1px 0px #f7f7f7;
     text-align: center;
 }
 
@@ -62,6 +62,27 @@ div.infos-top .info strong {
 }
 
 div.infos-top .info p,
-div.infos-top .info i {
-    font-size: 14px
+div.infos-top .info i,
+div.row-prods .prod p {
+    font-size: 13px;
+}
+
+div.row-prods {
+    display: flex;
+    padding: 0 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+div.row-prods .prod {
+    margin: 5px;
+}
+
+div.row-prods .prod p.p-title {
+    margin-bottom: 8px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #6a6a6a;
 }
