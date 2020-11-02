@@ -1,23 +1,44 @@
+/* #region Definições gerais */
+
 * {
     padding: 0px;
     box-sizing: border-box;
     margin: 0%;
     text-decoration: none;
+    font-family: system-ui;
 }
 
 button:focus {
     outline: none;
 }
 
+
+/* #endregion */
+
+
+/* #region Css da Navbar */
+
 nav {
     background-color: rgb(39 39 39);
     height: 90px;
 }
 
+
+/* #endregion */
+
+
+/* #region banner */
+
 section.banner {
     background: #fff url("../img/banner-principal.png") no-repeat center;
     height: 650px;
 }
+
+
+/* #endregion */
+
+
+/* #region corpo-pagina */
 
 main {
     width: 95%;
@@ -26,13 +47,8 @@ main {
     padding: 0 15px;
 }
 
-div.offers-top {
-    display: flex;
-    justify-content: space-between;
-    margin: 22px 0;
-    width: initial;
-    overflow: hidden;
-}
+
+/* #region Primeiras informações da pagina */
 
 div.infos-top {
     background-color: #fff;
@@ -50,7 +66,7 @@ div.infos-top .info {
     justify-content: center;
     align-items: center;
     width: 25%;
-    box-shadow: 1px 0 1px 0px #f7f7f7;
+    box-shadow: 1px 0 0 0 #c0c0c0;
     text-align: center;
 }
 
@@ -67,11 +83,28 @@ div.infos-top .info strong {
     text-transform: uppercase;
 }
 
+
+/* #endregion */
+
 div.infos-top .info p,
 div.infos-top .info i,
 div.row-prods .prod p {
     font-size: 13px;
 }
+
+
+/* Imagens de possiveis ofertas */
+
+div.offers-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0;
+    width: initial;
+    overflow: hidden;
+}
+
+
+/* #region linha com os produtos */
 
 div.row-prods {
     display: flex;
@@ -94,10 +127,19 @@ div.row-prods .prod p.p-title {
     margin-bottom: 3px;
 }
 
+
+/* #endregion */
+
+
+/* Apenas para deixar o risco no meio da escrita */
+
 .strike {
     text-decoration: line-through;
     color: #6a6a6a;
 }
+
+
+/* #region utilizavel para os carousel */
 
 .carousel {
     position: relative;
@@ -122,6 +164,9 @@ button.bt-prev {
     left: 0px;
 }
 
+
+/* #endregion */
+
 .title {
     margin: 50px 0;
     font-size: 30px;
@@ -134,3 +179,6 @@ button.bt-prev {
 hr {
     margin-top: 20px;
 }
+
+
+/* #endregion */
