@@ -153,11 +153,13 @@ button.bt-prev {
     border: 0;
     box-shadow: unset;
     background-color: #fff;
-    bottom: 70px;
+    bottom: 78px;
+    background: #fff url("../img/arrow.png") no-repeat center;
 }
 
 button.bt-next {
     right: 0px;
+    transform: rotate(180deg);
 }
 
 button.bt-prev {
