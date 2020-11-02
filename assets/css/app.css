@@ -1,4 +1,4 @@
-/* #region Definições gerais */
+/* #region DefiniÃ§Ãµes gerais */
 
 * {
     padding: 0px;
@@ -21,8 +21,76 @@ button:focus {
 nav {
     background-color: rgb(39 39 39);
     height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+nav .menus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 20px;
+}
+
+nav .menus div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89%;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+nav .menus .m-cat a{
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+nav .menus .m-cat::after {
+    margin-left: 4px;
+    transform: rotate(90deg);
+    content: ">";
+    font-size: 14px;
+    font-weight: 500;    
+    color: #ffffff;
+}
+
+nav .menus a.hotsale{
+    margin-top:8px;
+    letter-spacing: 3px;
+    color: #ff5959;
+}
+
+nav .menus .m-cat:hover{
+    box-shadow: inset 0 -2px 0px 0px #ff5959;
+    position: relative
+}
+
+nav .menus .m-cat:hover .sub-cats {
+    display: flex;
+}
+
+nav .menus .sub-cats{
+    display: none;
+    position:absolute;
+    bottom: -206px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 390px;
+    background-color: rgb(255 255 255 / .8);
+    padding: 25px 13px;
+    height: fit-content;
+}
+
+nav .menus .sub-cats a{
+    color: #272727;
+    margin: 10px 5px;
+    font-weight: 600;
+}
 
 /* #endregion */
 
@@ -54,7 +122,7 @@ div.infos-top {
     background-color: #fff;
     display: flex;
     margin: -80px -15px 0 -15px;
-    box-shadow: 0 0 1px 1px #f7f7f7;
+    box-shadow: 0 0 1px 1px #e9e9e9;
     padding: 20px;
     justify-content: center;
     flex-wrap: wrap;
@@ -66,7 +134,7 @@ div.infos-top .info {
     justify-content: center;
     align-items: center;
     width: 25%;
-    box-shadow: 1px 0 0 0 #c0c0c0;
+    box-shadow: 2px 0 0 0 #e9e9e9;
     text-align: center;
 }
 
