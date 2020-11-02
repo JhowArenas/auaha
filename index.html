@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="offers-top">
+        <div class="offers-top carousel">
             <a href="#oferta1" title="Imagem para oferta 1">
                 <img src="assets/img/top-1.png" alt="Imagem oferta 1">
             </a>
@@ -75,7 +75,9 @@
             </a>
         </div>
 
-        <div id="best-sellers" class="row-prods">
+        <h1 class="title">Os mais vendidos</h1>
+
+        <div id="best-sellers" class="row-prods carousel">
             <div class="prod">
                 <img src="prod-img/produto-1.png" alt="Produto 1">
                 <p class="p-title">Blusa Ciganinha Bordada Branca</p>
@@ -105,12 +107,91 @@
                 <b>R$159,90</b>
                 <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
             </div>
+            <button onclick="nextItem('best-sellers')" class="bt-next"> n </button>
+            <button onclick="prevItem('best-sellers')" class="bt-prev"> p </button>
         </div>
 
+        <hr>
+
+        <h2 class="title">Nossas promoções</h2>
+
+        <div id="our-sale" class="row-prods carousel">
+            <div class="prod">
+                <img src="prod-img/produto-1.png" alt="Produto 1">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <p class="strike">R$198,90</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-2.png" alt="Produto 2">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-3.png" alt="Produto 3">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <p class="strike">R$198,90</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-4.png" alt="Produto 4">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+            <button onclick="nextItem('our-sale')" class="bt-next"> n </button>
+            <button onclick="prevItem('our-sale')" class="bt-prev"> p </button>
+        </div>
+
+        <hr>
+
+        <h3 class="title">Novidades</h3>
+
+        <div id="new-prods" class="row-prods carousel">
+            <div class="prod">
+                <img src="prod-img/produto-1.png" alt="Produto 1">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <p class="strike">R$198,90</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-2.png" alt="Produto 2">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-3.png" alt="Produto 3">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <p class="strike">R$198,90</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+
+            <div class="prod">
+                <img src="prod-img/produto-4.png" alt="Produto 4">
+                <p class="p-title">Blusa Ciganinha Bordada Branca</p>
+                <b>R$159,90</b>
+                <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
+            </div>
+            <button onclick="nextItem('new-prods')" class="bt-next"> n </button>
+            <button onclick="prevItem('new-prods')" class="bt-prev"> p </button>
+        </div>
+
+        <hr>
 
     </main>
 </body>
 
 </html>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/jquery.min.js "></script>
+<script src="assets/js/app.js "></script>
