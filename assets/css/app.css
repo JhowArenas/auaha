@@ -1,4 +1,4 @@
-/* #region DefiniÃ§Ãµes gerais */
+/* #region DefiniÃƒÂ§ÃƒÂµes gerais */
 
 * {
     padding: 0px;
@@ -6,9 +6,6 @@
     margin: 0%;
     text-decoration: none;
     font-family: system-ui;
-}
-
-button:focus {
     outline: none;
 }
 
@@ -26,7 +23,10 @@ nav {
     align-items: center;
 }
 
-nav .menus{
+
+/* #region menu categorias */
+
+nav .menus {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +38,13 @@ nav .menus div {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 89%;
+    height: 100%;
     margin: 0 10px;
-    margin-top: 10px;
 }
 
-nav .menus .m-cat a{
+nav .menus .m-cat a {
     font-size: 14px;
+    margin-top: 10px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0px;
@@ -52,20 +52,21 @@ nav .menus .m-cat a{
 
 nav .menus .m-cat::after {
     margin-left: 4px;
+    margin-top: 10px;
     transform: rotate(90deg);
     content: ">";
     font-size: 14px;
-    font-weight: 500;    
+    font-weight: 500;
     color: #ffffff;
 }
 
-nav .menus a.hotsale{
-    margin-top:8px;
+nav .menus a.hotsale {
+    margin-top: 8px;
     letter-spacing: 3px;
     color: #ff5959;
 }
 
-nav .menus .m-cat:hover{
+nav .menus .m-cat:hover {
     box-shadow: inset 0 -2px 0px 0px #ff5959;
     position: relative
 }
@@ -74,10 +75,10 @@ nav .menus .m-cat:hover .sub-cats {
     display: flex;
 }
 
-nav .menus .sub-cats{
+nav .menus .sub-cats {
     display: none;
-    position:absolute;
-    bottom: -206px;
+    position: absolute;
+    top: 90px;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 390px;
@@ -86,11 +87,58 @@ nav .menus .sub-cats{
     height: fit-content;
 }
 
-nav .menus .sub-cats a{
+nav .menus .sub-cats a {
     color: #272727;
     margin: 10px 5px;
     font-weight: 600;
 }
+
+
+/* #endregion */
+
+nav div.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 10px;
+    border: solid #ffffff;
+    border-width: 0 1px;
+    position: relative;
+    font-size: 10px;
+    font-style: italic;
+}
+
+nav div.search img {
+    margin-left: 10px;
+}
+
+nav .search div {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100%;
+    padding: 0 10px;
+    position: absolute;
+    background-color: white;
+}
+
+nav .search div input {
+    border: 0;
+    font-size: 18px;
+    padding: 5px 15px;
+    width: 100%;
+    font-weight: 100;
+    font-style: italic;
+}
+
+nav .search:hover div {
+    display: flex;
+    right: 0
+}
+
 
 /* #endregion */
 
@@ -116,7 +164,7 @@ main {
 }
 
 
-/* #region Primeiras informações da pagina */
+/* #region Primeiras informaÃ§Ãµes da pagina */
 
 div.infos-top {
     background-color: #fff;
@@ -184,7 +232,7 @@ div.row-prods {
 }
 
 div.row-prods .prod {
-    margin-right: 2.7%;
+    padding: 5px 0px;
 }
 
 div.row-prods .prod img {
@@ -221,17 +269,17 @@ button.bt-prev {
     border: 0;
     box-shadow: unset;
     background-color: #fff;
-    bottom: 78px;
+    bottom: 72px;
     background: #fff url("../img/arrow.png") no-repeat center;
 }
 
 button.bt-next {
-    right: 0px;
+    right: 0;
     transform: rotate(180deg);
 }
 
 button.bt-prev {
-    left: 0px;
+    left: 0;
 }
 
 
