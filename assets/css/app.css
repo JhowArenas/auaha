@@ -244,12 +244,15 @@ div.infos-top {
 
 div.infos-top .info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 25%;
+    min-width: 132px;
     box-shadow: 2px 0 0 0 #e9e9e9;
     text-align: center;
+    padding: 5px 8px;
 }
 
 div.infos-top .info:last-child {
@@ -335,7 +338,7 @@ button.bt-prev {
     border: 0;
     box-shadow: unset;
     background-color: #fff;
-    bottom: 72px;
+    bottom: 78px;
     background: #fff url("../img/arrow.png") no-repeat center;
 }
 
@@ -364,5 +367,34 @@ hr {
     margin-top: 20px;
 }
 
+
+/* #endregion */
+
+/* #region mobile */
+
+@media(max-width:1200px){
+
+    nav .menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: -1000px;
+    position:absolute;
+}
+    div.infos-top div.info{
+        box-shadow: none
+    }
+   
+    div.infos-top div.info:first-child, div.infos-top div.info:nth-child(2){
+        border-bottom: 2px solid #e9e9e9
+    }
+
+    div.infos-top div.info:nth-child(2n+1) {
+        border-right: 2px solid #e9e9e9
+    }
+
+}
 
 /* #endregion */
