@@ -90,6 +90,8 @@ nav .account div {
     background-color: rgb(255 255 255 / .8);
     height: fit-content;
     width: max-content;
+    height: -moz-fit-content;
+    width: -moz-max-content;
 }
 
 nav .menus .sub-cats {
@@ -236,7 +238,7 @@ section.banner {
 }
 
 
-/* #region Primeiras informaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes da pagina */
+/* #region Primeiras informaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes da pagina */
 
 div.infos-top {
     background-color: #fff;
@@ -328,7 +330,7 @@ div.row-prods .prod.new div.new-info{
     width: 100%;
     position: absolute;
     top: 0;   
-    transition: height 1s ; 
+    transition: height .5s ; 
     overflow: hidden;
     display: flex;
     align-items:center;
@@ -339,14 +341,10 @@ div.row-prods .prod.new:hover div.new-info{
     height: 100%;
 }
 
-div.row-prods .prod.new div.new-info span{
+div.row-prods .prod.new div.new-info span{    
     position: absolute;
     top: 5px;
     right: 5px;
-    border-radius: 100%;
-    padding: 10px 5px;
-    color: #ffe500;
-    border: 1px solid #ffe500;
 }
 div.row-prods .prod.new div.new-info  .more-info{
     border: 1px solid #ffffff;
@@ -364,6 +362,93 @@ div.row-prods .prod.new div.new-info  .more-info{
     color: #6a6a6a;
 }
 
+.bt-new, .bt-hot-sale, .bt-frete-gratis{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.bt-new{
+    padding: 10px 5px;
+    color: #ffe500;
+    border: 1px solid #ffe500;
+    background-color: #fff;
+}
+.bt-new::after{    
+    content: "NEW";
+}
+.bt-hot-sale{
+    padding: 10px 5px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #ff5959;
+}
+.bt-hot-sale::after{
+    content: "HOT SALE";
+}
+.bt-frete-gratis::before{
+}
+.bt-frete-gratis{
+    background-image: url("../img/frete-top.png");
+    background-size: 23px 15px;
+    background-position: center 6px;
+    background-repeat: no-repeat;
+    padding: 10px 1px;
+    font-size: 13px;
+    border: 1px solid #ff5959;
+    color: #ff5959;
+    background-color: #ffffff;
+}
+.bt-frete-gratis::after{
+    content: "GRATIS";
+    margin-top: 16px;
+    letter-spacing: -1px;
+    font-size: 11px;
+}
+
+.bt-lg{
+    height: 50px;
+    margin: 5px;
+    padding: 0 20px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.bt-green{
+    color: #fff;
+    background-color: #87bf00;
+}
+.bt-gray{
+    background-color: #636363;
+    color: white;
+}
+
+.bt-xl{
+    height: 40px;
+    margin: 5px;
+    padding: 0 20px;
+    display: flex;
+    font-size: 12pt;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bt-sm{
+    margin: 5px;
+    padding: 4px 20px;
+    display: flex;
+    font-size: 9pt;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
 
 /* #region utilizavel para os carousel */
 
@@ -381,6 +466,7 @@ button.bt-prev {
     background-color: #fff;
     bottom: 78px;
     background: #fff url("../img/arrow.png") no-repeat center;
+    z-index: 1;
 }
 
 button.bt-next {
@@ -488,14 +574,16 @@ footer {
 
 footer div.options {
     display: flex;
+    flex-wrap: wrap;
 }
 
 footer div.options div,
 footer div.payments {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 5px;
     align-items: baseline;
+    overflow: hidden;
 }
 
 footer .title {

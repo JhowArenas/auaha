@@ -1,7 +1,12 @@
+$(document).ready(function(){
+    $(".prod.new").append("<div class='new-info'><span class='bt-new'>NEW</span><buttom class='more-info'>Mais Detalhes</buttom><div>")
+});
+
 var screenWith = innerWidth;
 if (screenWith <= 1200) {
     $("nav").append("<div class='shadow'></div>")
 }
+
 $(window).resize(function() {
     screenWith = innerWidth;
     $(".shadow").remove();
@@ -15,7 +20,6 @@ $(window).resize(function() {
     $("body").removeClass("of-hidden");
 });
 
-$(".prod.new").append("<div class='new-info'><span>NEW</span><buttom class='more-info'>Mais Detalhes</buttom><div>")
 
 $("#logo").click(function() {
     if (screenWith < 1200) {
@@ -32,17 +36,17 @@ $(".shadow").click(function() {
 })
 
 function nextItem(root) {
-    var count = $("#" + root + " div").length;
-    var firstElement = $("#" + root + " div").get(0);
+    var count = $("#" + root + " div.prod").length;
+    var firstElement = $("#" + root + " div.prod").get(0);
 
-    $("#" + root + " div").get(0).remove;
+    $("#" + root + " div.prod").get(0).remove;
     $("#" + root).last().append(firstElement)
 }
 
 function prevItem(root) {
-    var count = $("#" + root + " div").length;
-    var firstElement = $("#" + root + " div").get(count - 1);
+    var count = $("#" + root + " div.prod").length;
+    var firstElement = $("#" + root + " div.prod").get(count - 1);
 
-    $("#" + root + " div").get(count - 1).remove;
+    $("#" + root + " div.prod").get(count - 1).remove;
     $("#" + root).prepend(firstElement)
 }
