@@ -1,9 +1,11 @@
+
+
 * {
     padding: 0px;
     box-sizing: border-box;
     margin: 0%;
     text-decoration: none;
-    font-family: system-ui;
+    font-family: "Rubik";
     outline: none;
 }
 
@@ -120,7 +122,7 @@ nav div.search {
 }
 
 nav div.search img {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 nav .search div {
@@ -306,6 +308,7 @@ div.row-prods {
 
 div.row-prods .prod {
     padding: 5px 0px;
+    position: relative;
 }
 
 div.row-prods .prod img {
@@ -316,6 +319,40 @@ div.row-prods .prod p.p-title {
     margin-bottom: 3px;
 }
 
+
+div.row-prods .prod.new div.new-info{
+    background-color: rgb(39 39 39 / .8);
+    opacity: 1;
+    display: flex;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;   
+    transition: height 1s ; 
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+div.row-prods .prod.new:hover div.new-info{
+    height: 100%;
+}
+
+div.row-prods .prod.new div.new-info span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100%;
+    padding: 10px 5px;
+    color: #ffe500;
+    border: 1px solid #ffe500;
+}
+div.row-prods .prod.new div.new-info  .more-info{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px
+}
 
 /* #endregion */
 

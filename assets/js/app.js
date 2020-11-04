@@ -15,6 +15,8 @@ $(window).resize(function() {
     $("body").removeClass("of-hidden");
 });
 
+$(".prod.new").append("<div class='new-info'><span>NEW</span><buttom class='more-info'>Mais Detalhes</buttom><div>")
+
 $("#logo").click(function() {
     if (screenWith < 1200) {
         event.preventDefault();
