@@ -1,5 +1,3 @@
-/* #region DefiniÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes gerais */
-
 * {
     padding: 0px;
     box-sizing: border-box;
@@ -26,7 +24,8 @@ nav {
 
 /* #region menu categorias */
 
-nav .menus {
+nav .menus,
+nav .right-side {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,19 +65,21 @@ nav .menus a.hotsale {
     color: #ff5959;
 }
 
-nav .menus .m-cat:hover, 
-nav .contact:hover, 
+nav .menus .m-cat:hover,
+nav .contact:hover,
 nav .account:hover {
     box-shadow: inset 0 -2px 0px 0px #ff5959;
     position: relative
 }
 
-nav .menus .m-cat:hover .sub-cats, nav .contact:hover div, nav .account:hover div {
+nav .menus .m-cat:hover .sub-cats,
+nav .contact:hover div,
+nav .account:hover div {
     display: flex;
 }
 
-nav .menus .sub-cats, 
-nav .contact div, 
+nav .menus .sub-cats,
+nav .contact div,
 nav .account div {
     display: none;
     position: absolute;
@@ -89,9 +90,9 @@ nav .account div {
     width: max-content;
 }
 
-nav .menus .sub-cats{    
+nav .menus .sub-cats {
     justify-content: space-between;
-    width: 390px;
+    width: 400px;
     padding: 25px 13px;
 }
 
@@ -123,12 +124,13 @@ nav div.search img {
 }
 
 nav .search div {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 0px;
+    right: 0;
+    overflow: hidden;
     height: 100%;
-    padding: 0 10px;
     position: absolute;
     background-color: white;
 }
@@ -143,58 +145,58 @@ nav .search div input {
 }
 
 nav .search:hover div {
-    display: flex;
-    right: 0
+    transition: all 1.5s;
+    width: 700px;
 }
 
-nav .contact, 
-nav .account{
-    display:flex;
+nav .contact,
+nav .account {
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 100%
 }
 
-nav .contact{
+nav .contact {
     padding: 0 3px;
     margin: 0 2px;
 }
-nav .account{
+
+nav .account {
     padding: 0 3px;
     margin: 0 2px 0 10px;
 }
 
-nav .contact div, 
-nav .account div{
-    flex-direction:column;
+nav .contact div,
+nav .account div {
+    flex-direction: column;
     padding: 15px 15px 5px 15px
 }
 
-nav .contact div a, 
-nav .account div a{
+nav .contact div a,
+nav .account div a {
     color: #272727;
     padding: 5px;
     display: flex;
     align-items: center;
 }
 
-nav .contact div a img, 
-nav .account div a img{
-margin-right: 8px;
+nav .contact div a img,
+nav .account div a img {
+    margin-right: 8px;
 }
 
-
-nav .buy-bag{
+nav .buy-bag {
     margin: 0 5px;
     padding: 0 15px;
     background-color: #ff5959;
     display: flex;
-    align-items:center;
+    align-items: center;
     height: 100%;
     position: relative;
 }
 
-nav .buy-bag span{
+nav .buy-bag span {
     border-radius: 100%;
     color: white;
     background-color: #272727;
@@ -203,7 +205,7 @@ nav .buy-bag span{
     right: 10px;
     padding: 1% 10%;
     margin-top: -10px;
-    }
+}
 
 
 /* #endregion */
@@ -213,7 +215,8 @@ nav .buy-bag span{
 
 section.banner {
     background: #fff url("../img/banner-principal.png") no-repeat center;
-    height: 650px;
+    background-size: cover;
+    height: 75vh;
 }
 
 
@@ -222,15 +225,16 @@ section.banner {
 
 /* #region corpo-pagina */
 
-main {
+.container {
     width: 95%;
     max-width: 1175px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 15px;
 }
 
 
-/* #region Primeiras informaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes da pagina */
+/* #region Primeiras informaÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âµes da pagina */
 
 div.infos-top {
     background-color: #fff;
@@ -367,34 +371,220 @@ hr {
     margin-top: 20px;
 }
 
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .destaque {
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.newsletter .destaque p:first-child {
+    font-size: 20px;
+    letter-spacing: 1px
+}
+
+.newsletter .info {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.newsletter .input-news {
+    background-color: #636363;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    margin: 0 15px
+}
+
+.newsletter .input-news input {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    height: 50px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.newsletter .input-news::after {
+    content: ">";
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0 10px;
+}
+
+.newsletter .social-midias {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter .social-midias * {
+    margin: 0 3px
+}
+
 
 /* #endregion */
 
-/* #region mobile */
+.of-hidden {
+    overflow: hidden;
+}
 
-@media(max-width:1200px){
 
-    nav .menus {
+/* #region footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+footer div.options {
+    display: flex;
+}
+
+footer div.options div,
+footer div.payments {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-left: -1000px;
-    position:absolute;
+    margin: 0 15px;
+    align-items: baseline;
 }
-    div.infos-top div.info{
-        box-shadow: none
+
+footer .title {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 0;
+    text-align: left;
+}
+
+footer div.options a {
+    color: #272727;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer div.options a img {
+    margin-right: 4px
+}
+
+footer div.payments img {
+    margin-bottom: 10px
+}
+
+
+/* #endregion */
+
+
+/* #region mobile */
+
+@media(max-width:1200px) {
+    nav {
+        justify-content: space-between;
     }
-   
-    div.infos-top div.info:first-child, div.infos-top div.info:nth-child(2){
+    nav .menus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        margin-left: -200%;
+        position: absolute;
+        background-color: #272727;
+        padding: 20px;
+        z-index: 2;
+        top: 0;
+        width: 50%;
+        min-width: 250px;
+        transition: margin 1s;
+    }
+    nav .menus.open {
+        margin: 0
+    }
+    nav .menus div {
+        height: fit-content;
+        margin: 5px 0;
+        padding: 5px 0;
+        width: 100%;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    nav .menus .m-cat::after {
+        content: "";
+    }
+    nav .menus .m-cat:hover .sub-cats {
+        display: none;
+    }
+    nav .search div {
+        right: inherit
+    }
+    nav .search:hover div {
+        top: 90px;
+        width: 270px
+    }
+    nav .right-side {
+        margin: 0 2px;
+    }
+    nav .contact div {
+        right: -20px
+    }
+    nav a.logo {
+        margin: 0 3px 0 8px
+    }
+    nav div.search label {
+        display: none;
+    }
+    nav div.search img {
+        margin: 0 3px;
+    }
+    div.infos-top div.info {
+        box-shadow: none;
+        width: 50%;
+    }
+    div.infos-top div.info:first-child,
+    div.infos-top div.info:nth-child(2) {
         border-bottom: 2px solid #e9e9e9
     }
-
     div.infos-top div.info:nth-child(2n+1) {
         border-right: 2px solid #e9e9e9
     }
-
+    div.row-prods .prod {
+        margin: 0 5px
+    }
+    .newsletter .destaque,
+    .newsletter .info,
+    .newsletter .input-news {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 500rem;
+        background-color: rgb(201 201 201);
+        z-index: 1;
+        opacity: 0;
+        margin-left: -150%;
+        transition: opacity 1s;
+    }
+    .shadow.open {
+        margin-left: 0;
+        opacity: .5;
+    }
 }
+
 
 /* #endregion */

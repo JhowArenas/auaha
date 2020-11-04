@@ -36,7 +36,7 @@
 
 <body>
     <nav>
-        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Chaire Logo"></a>
+        <a id="logo" href="index.html" class="logo"><img src="assets/img/logo.png" alt="Chaire Logo"></a>
         <div class="menus">
             <div class="m-cat"><a href="#catVestidos" title="Vestidos" alt="Categoria Vestidos">Vestidos</a></div>
             <div class="m-cat">
@@ -63,41 +63,42 @@
             <div class="m-cat"><a href="#catPraia" title="Praia" alt="Categoria Praia">Praia</a></div>
             <div><a href="#hotsale" alt="Hot Sale" class="hotsale" title="Hot Sale">HOT SALE</a></div>
         </div>
-        <div class="search">
-            <label for="busca">Busque</label>
-            <img src="assets/img/search-icon.png" alt="Buscar seu produto">
-            <div>
-                <input type="text" name="busca" placeholder="Faça a busca do seu produto" id="busca">
-                <img src="assets/img/search-icon.png" alt="Botão de pesquisa">
+        <div class="right-side">
+            <div class="search">
+                <label for="busca">Busque</label>
+                <img src="assets/img/search-icon.png" alt="Buscar seu produto">
+                <div>
+                    <input type="text" name="busca" placeholder="Faça a busca do seu produto" id="busca">
+                    <img src="assets/img/search-icon.png" alt="Botão de pesquisa">
+                </div>
             </div>
-        </div>
-        <div class="account">
-            <img src="assets/img/user-icon.png" alt="Opções da conta do usuario">
-            <div>
-                <a href="#minha-conta" title="Minha conta">Minha conta</a>
-                <a href="#meus-pedidos" title="Meus pedidos">Meus pedidos</a>
-                <a href="#cadastrar" title="Cadastrar">Cadastrar</a>
+            <div class="account">
+                <img src="assets/img/user-icon.png" alt="Opções da conta do usuario">
+                <div>
+                    <a href="#minha-conta" title="Minha conta">Minha conta</a>
+                    <a href="#meus-pedidos" title="Meus pedidos">Meus pedidos</a>
+                    <a href="#cadastrar" title="Cadastrar">Cadastrar</a>
+                </div>
             </div>
-        </div>
-        <div class="contact">
-            <img src="assets/img/contac-icon.png" alt="Opções de contato">
-            <div>
-                <a href="tel:(11)976672321" title="Telefone"><img src="assets/img/phone-icon.png" alt="icone Telefone"> (11) 97667 2321</a>
-                <a href="https://api.whatsapp.com/send?phone=5511976672321" title="Whatsapp"><img src="assets/img/whats-icon.png" alt="icone Whatsapp"> (11) 97667 2321</a>
-                <a href="mailto:hello@chaire.com.br" title="Email"> <img src="assets/img/mail-icon.png" alt="icone Email"> hello@chaire.com.br</a>
-                <a href="#contact-us" title="Contato"><b>Clique aqui e fale conosco</b></a>
+            <div class="contact">
+                <img src="assets/img/contac-icon.png" alt="Opções de contato">
+                <div>
+                    <a href="tel:(11)976672321" title="Telefone"><img src="assets/img/phone-icon.png" alt="icone Telefone"> (11) 97667 2321</a>
+                    <a href="https://api.whatsapp.com/send?phone=5511976672321" title="Whatsapp"><img src="assets/img/whats-icon.png" alt="icone Whatsapp"> (11) 97667 2321</a>
+                    <a href="mailto:hello@chaire.com.br" title="Email"> <img src="assets/img/mail-icon.png" alt="icone Email"> hello@chaire.com.br</a>
+                    <a href="#contact-us" title="Contato"><b>Clique aqui e fale conosco</b></a>
+                </div>
             </div>
-        </div>
-        <div class="buy-bag">
-            <img src="assets/img/bag-icon.png" alt="Coisas na sacola">
-            <span class="qtd-bag">3</span>
+            <div class="buy-bag">
+                <img src="assets/img/bag-icon.png" alt="Coisas na sacola">
+                <span class="qtd-bag">3</span>
+            </div>
         </div>
     </nav>
 
     <section class="banner"></section>
 
-    <main>
-
+    <main class="container">
         <div class="infos-top">
             <div class="info">
                 <img src="assets/img/credit-card-top.png" alt="4 vezes sem juros no Cartão de Crédito">
@@ -145,7 +146,7 @@
                 <p>ou <b>10x</b> de <b>R$ 15,99</b> s/ juros</p>
             </div>
 
-            <div class="prod">
+            <div class="prod new">
                 <img src="prod-img/produto-2.png" alt="Produto 2">
                 <p class="p-title">Blusa Ciganinha Bordada Branca</p>
                 <b>R$159,90</b>
@@ -248,11 +249,67 @@
 
         <hr>
 
-
-
+        <div class="newsletter">
+            <div class="destaque">
+                <p>Fique sempre</p>
+                <p> por dentro</p>
+            </div>
+            <div class="info">
+                Cadastre o seu e-mail em nossa Newsletter e seja <br> sempre a primeira a receber nossas ofertas e novidades
+            </div>
+            <div class="input-news">
+                <input type="text" placeholder="Digite seu e-mail">
+            </div>
+            <div class="social-midias">Siga-nos
+                <a href="https://www.facebook.com/agenciaauaha"><img src="assets/img/facebook-ico.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/agenciaauaha"><img src="assets/img/instagram-ico.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <hr>
     </main>
+    <footer class="container">
+        <div class="options">
+            <div>
+                <p class="title">Institucional</p>
+                <a href="#empresa" title="Saiba mais sobre a Empresa">Empresa</a>
+                <a href="#cadastre-se" title="Cadastre-se">Cadastre-se</a>
+                <a href="#meus-pedidos" title="Meus pedidos">Meus pedidos</a>
+                <a href="#contato" title="Contato">Contato</a>
+            </div>
+            <div>
+                <p class="title">Dúvidas</p>
+                <a href="#como-comprar" title="Como comprar">Como comprar</a>
+                <a href="#pagamento" title="Pagamento">Pagamento</a>
+                <a href="#prazos-e-envios" title="Prazos e envios">Prazos e envios</a>
+                <a href="#garantia" title="Garantia">Garantia</a>
+                <a href="#troca" title="Troca">Troca</a>
+                <a href="#segurança" title="Segurança">Segurança</a>
+            </div>
+            <div>
+                <p class="title">Atendimento</p>
+                <a href="tel:(11)976672321" title="Telefone"><img src="assets/img/phone-icon.png" alt="icone Telefone"> (11) 97667 2321</a>
+                <a href="https://api.whatsapp.com/send?phone=5511976672321" title="Whatsapp"><img src="assets/img/whats-icon.png" alt="icone Whatsapp"> (11) 97667 2321</a>
+                <a href="mailto:hello@chaire.com.br" title="Email"> <img src="assets/img/mail-icon.png" alt="icone Email"> hello@chaire.com.br</a>
+                <a href="#contact-us" title="Contato"><b>Clique aqui e fale conosco</b></a>
+            </div>
+        </div>
+        <div class="payments">
+            <p class="title">PAGAMENTO</p>
+            <img src="assets/img/pagamento-prazo.png" alt="modos de pagamento aprazo">
+            <img src="assets/img/pagamento-avista.png" alt="modos de pagamento avista">
+        </div>
+        <div class="fb-page" data-href="https://www.facebook.com/agenciaauaha" data-tabs="" data-width="250px" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/agenciaauaha" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/agenciaauaha">Auaha</a></blockquote>
+        </div>
+    </footer>
+    <div class="container">
+        <hr>
+        <div style="text-align: center;"><img src="assets/img/asstray.png" alt=""></div>
+    </div>
 </body>
 
 </html>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="Nf0ZqG5J"></script>
 <script src="assets/js/jquery.min.js "></script>
 <script src="assets/js/app.js "></script>
