@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".prod.new").append("<div class='new-info'><span class='bt-new'>NEW</span><buttom class='more-info'>Mais Detalhes</buttom><div>")
+    $(".prod.new").append("<div class='new-info'><span class='bt-new'></span><buttom class='more-info'>Mais Detalhes</buttom><div>")
 });
 
 var screenWith = innerWidth;
